@@ -87,7 +87,7 @@ gulp.task('ftp',gulpsync(['ftp:clean','ftp:send','ftp:chmod']))
 
 
 gulp.task('git:co:gh-pages',(done)=>{
-  git.checkout('gh-pages',{},(err)=>{
+  git.checkout('gh-pages',(err)=>{
     if (err) throw err;
     done();
   })
