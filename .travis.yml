@@ -15,7 +15,8 @@ script:
 - git status
 - git checkout master
 - git status
-- git branch
+- git branch gh-pages
+- git status
 - gulp build:gh-pages
 cache:
   directories:
