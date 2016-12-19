@@ -100,8 +100,8 @@ gulp.task('git:co:gh-pages',(done)=>{
   })
 })
 
-gulp.task('git:fetch', (done)=>{
-  git.fetch('', '', {args: '--all'},(err)=> {
+gulp.task('git:pull', (done)=>{
+  git.pull('origin', 'gh-pages', {args: '--rebase'}, (err)=> {
     if (err) throw err;
     done();
   })
@@ -196,7 +196,7 @@ gulp.task('build:serve', gulpsync(buildServeStack) )
 
 
 const buildGhPages = buildStack.map((e)=>e).concat([
-    'git:branch:gh-pages','git:co:gh-pages','git:fetch','clean:gh-pages','dist:copy','clean:build','git:commit:gh-pages','git:push:gh-pages','git:co:master'])
+    'git:branch:gh-pages','git:co:gh-pages','git:pull','clean:gh-pages','dist:copy','clean:build','git:commit:gh-pages','git:push:gh-pages','git:co:master'])
 
 gulp.task('build:gh-pages',gulpsync(buildGhPages));
 
