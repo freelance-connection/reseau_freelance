@@ -86,6 +86,13 @@ gulp.task('uglify',['uglify:js','uglify:css']);
 gulp.task('ftp',gulpsync(['ftp:clean','ftp:send','ftp:chmod']))
 
 
+gulp.task('git:branch:gh-pages',(done)=>{
+  git.branch('gh-pages',(err)=> {
+    if (err) throw err;
+    done();
+  })
+})
+
 gulp.task('git:co:gh-pages',(done)=>{
   git.checkout('gh-pages',{},(err)=>{
     if (err) throw err;
@@ -182,7 +189,7 @@ gulp.task('build:serve', gulpsync(buildServeStack) )
 
 
 const buildGhPages = buildStack.map((e)=>e).concat([
-    'git:co:gh-pages','clean:gh-pages','dist:copy','clean:build','git:commit:gh-pages','git:push:gh-pages','git:co:master'])
+    'git:branch:gh-pages','git:co:gh-pages','clean:gh-pages','dist:copy','clean:build','git:commit:gh-pages','git:push:gh-pages','git:co:master'])
 
 gulp.task('build:gh-pages',gulpsync(buildGhPages));
 
