@@ -10,7 +10,7 @@ before_script:
 - bower install
 script: 
 - git config user.email "travis@seekdesign.fr";git config user.name "Travis deployment"
-- git remote set-url origin https://${GH_TOKEN}@${GH_REF} /dev/null 2>&1
+- git remote set-url origin https://${GH_TOKEN}@${GH_REF}
 - git fetch --all
 - gulp build:gh-pages
 cache:
