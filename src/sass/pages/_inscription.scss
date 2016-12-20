@@ -1,171 +1,123 @@
-
 .inscription-home {
-
-  background-color:$red;
-  padding-top:15vh;
-  padding-bottom:15vh;
-
-  .container {
-    width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin:0px;
-  }
-
-  .inscription-section {
-    width: 100%;
-    padding: 8vh 12vw;
-    display: flex;
-
-    p {
-      margin-top: 2em;
-      margin-bottom:5em;
-      font-family: $font-family-sans-serif;
-      font-weight: 300;
-      width: 100%;
-      font-size: 1.2em;
-    }
-
-    h2 {
-      font-size: 2em;
-      font-weight: 700;
-      width: 100%;
-      padding-bottom: 0.2em;
-    }
-
-    h4 {
-      margin-top: 1.2em;
-      width: 100%;
-    }
-
-    .container-text {
-      float: left;
-    }
-
-    .container-form {
-      width: 100%;
-      float: right;
-    }
-
-    .inscription-equation {
-      font-size: 2em;
-    }
-  
-    form {
-      width: 65%;
-      float: right;
-
-      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: #FFF;
-        font-family: $font-family-sans-serif;
-        font-weight:300;
-      }
-      ::-moz-placeholder { /* Firefox 19+ */
-        color: #FFF;
-        font-family: $font-family-sans-serif;
-        font-weight:300;
-      }
-      :-ms-input-placeholder { /* IE 10+ */
-        color: #FFF;
-        font-family: $font-family-sans-serif;
-        font-weight:300;
-      }
-      :-moz-placeholder { /* Firefox 18- */
-        color: #FFF;
-        font-family: $font-family-sans-serif;
-        font-weight:300;
-      }
-
-      input {
+    background-color: $red;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    .container {
         width: 100%;
-        border: none;
-        background-color: $red;
-        border-bottom: 2px solid #FFF;
-        margin-bottom: 3vh;
-        color: #FFF;
-        padding-bottom:1em;
-      }
-
-      textarea {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0px;
+    }
+    .inscription-section {
         width: 100%;
-        height: 15vh;
-        border: 2px solid #FFF;
-        background-color: $red;
-        color: #FFF;
-        resize: none;
-        padding: 1vh;
-        margin-bottom: 3vh;
-      }
+        padding: 8vh 12vw;
+        p {
+            margin-top: 2em;
+            margin-bottom: 5em;
+            font-family: $font-family-sans-serif;
+            font-weight: 300;
+            width: 100%;
+            font-size: 1.2em;
+        }
+        h2 {
+            font-size: 2em;
+            font-weight: 700;
+            width: 100%;
+            padding-bottom: 0.2em;
+        }
+        h4 {
+            margin-top: 1.2em;
+            width: 100%;
+        }
+        .container-text {
+            position: relative;
+            width: 100%;
+            display: block;
+        }
+        .container-form {
+            width: 100%;
+            float: right;
+        }
+        .inscription-equation {
+            font-size: 2em;
+        }
+        .slogan{
+          width: 40%;
+          position:absolute;
+          top: 1em;
+          right: 3em;
+        }
+        form {
+            width: 50%;
+            display: block;
+            position: relative;
+
+            ::placeholder {
+              color:$white;
+              font:$font-family-sans-serif;
+              font-weight: 300;
+            }
+        }
+        input {
+            width: 100%;
+            background-color: $red;
+            border: none;
+            border-bottom: 2px solid $white;
+            font:$font-family-sans-serif;
+            font-weight: 300;
+            margin-bottom: 2em;
+        }
+        content {
+            float: right;
+            background-color: $red;
+            border: 2px solid #FFF;
+            padding: 1vh 2vw;
+            font-family: $font-family-sans-serif;
+            font-weight: 300;
+            transition: all 150ms ease-in-out;
+            &:hover {
+                background-color: #FFF;
+                color: $red;
+            }
+        }
     }
-
-    button {
-      float: right;
-      background-color: $red;
-      border: 2px solid #FFF;
-      padding: 1vh 2vw;
-      font-family:$font-family-sans-serif;
-      font-weight: 300;
-      transition: all 150ms ease-in-out;
-
-      &:hover {
-        background-color:#FFF;
-        color:$red;
-      }
-    }
-
-  }
 }
 
 @media (max-width: $screen-sm-min) {
-  .inscription-home {
-
-    .inscription-section {
-    display:block;
-    padding: 5vh 5vw;
-
-    .container-text{
-      width:100%;
-
-      .slogan {
-        width: 70%;
-        margin-bottom:5em;
-      }
+    .inscription-home {
+        .inscription-section {
+            display: block;
+            padding: 5vh 5vw;
+            .container-text {
+                width: 100%;
+                .slogan {
+                    width: 70%;
+                    margin-bottom: 5em;
+                }
+            }
+            p {
+                margin-top: 1em;
+                margin-bottom: 2em;
+            }
+            .inscription-equation {
+                text-align: center;
+            }
+        }
     }
-
-    p{
-      margin-top: 1em;
-      margin-bottom:2em;
-    }
-
-    .inscription-equation {
-      text-align: center;
-    }
-
-    form{
-      float:none;
-      margin: 0 auto;
-      width: 80%;
-      font-size:1.4em;
-    }
-   } 
-  }
 }
 
 @media (max-width: $screen-xs-min) {
-  .inscription-home {
-    .inscription-section{
-      
-      .container-text {
-        .slogan {
-        width: 100%;
-        margin-bottom:3em;
-       }
-      }
-
-      form{
-        width: 90%;
-      }
+    .inscription-home {
+        .inscription-section {
+            .container-text {
+                .slogan {
+                    width: 100%;
+                    margin-bottom: 3em;
+                }
+            }
+            form {
+                width: 90%;
+            }
+        }
     }
-  }
 }
-
