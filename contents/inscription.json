@@ -5,6 +5,8 @@
 
   "subintro":"<b>You</b> + <b>us</b> = <b>awesome</b>",
 
+  "slogan":"contents/images/slogan.svg",
+
   "form": {
     "placeholder": {
         "name": "Nom et prénom",

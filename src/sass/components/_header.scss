@@ -4,16 +4,24 @@
  * Header on home page
  */
 
- .logo_svg {
-    width: 20%;
-  }
+.logo_svg {
+  width: 20%;
+}
 
-  .scrollIndicator {
-    width: 2%;
-    position: absolute;
-    top: 75vh;
-    left: 50%;
-  }
+.scrollIndicator {
+  width: 2%;
+  position: absolute;
+  top: 75vh;
+  left: 50%;
+}
+
+.sloganHeader {
+  position: absolute;
+  width: 31%;
+  right: 3vw;
+  opacity: 0.5;
+  top: 56vh;
+}
  
 header.main-header {
   &{
@@ -246,6 +254,10 @@ header.page-header{
     .container-text-header{
       width: 90%;
     }
+  }
+
+  .sloganHeader {
+    display: none;
   }
 
 }

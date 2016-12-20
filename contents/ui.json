@@ -1,11 +1,13 @@
 {
-  "title": "Réseau Freelance - Lille",
+  "title": "Freelance Connection - Lille",
 
   "metaDescription":"Mutualāb est un vaste espace de travail partagé : 700 m2 en plein centre de Lille, pour travailler en mode collaboratif ou personnel.",
 
   "logo":"Réseau Freelance",
 
   "logourl":"contents/images/logo_svg.svg",
+
+  "sloganHeader":"contents/images/slogan_header.svg",
 
   "icons": {
     "scrollIndicator":"contents/images/scroll_indicator.svg"
