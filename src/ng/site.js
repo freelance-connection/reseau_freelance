@@ -1,5 +1,5 @@
 var app = angular.module('reseau_freelance',
-    ['config', 'templates','ui.scrollpoint']);
+    ['ui.scrollpoint']);
 
 
 app.directive('mtSvg',[function(){
