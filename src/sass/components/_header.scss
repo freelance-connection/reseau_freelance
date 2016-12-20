@@ -7,6 +7,13 @@
  .logo_svg {
     width: 20%;
   }
+
+  .scrollIndicator {
+    width: 2%;
+    position: absolute;
+    top: 75vh;
+    left: 50%;
+  }
  
 header.main-header {
   &{
@@ -255,5 +262,4 @@ header.page-header{
   }
   
 }
-
 
