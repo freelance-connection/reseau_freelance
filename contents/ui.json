@@ -6,6 +6,10 @@
   "logo":"Réseau Freelance",
 
   "logourl":"contents/images/logo_svg.svg",
+
+  "icons": {
+    "scrollIndicator":"contents/images/scroll_indicator.svg"
+  },
   
   "header": {
     "introHeader": "Freelance dans le web à Lille ? <br> Une communauté s'organise pour avoir les mêmes avantages que les salariés !",
