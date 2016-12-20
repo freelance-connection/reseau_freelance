@@ -24,6 +24,15 @@ html, body{
   padding:0;
 }
 
+::-moz-selection { 
+  background: $red;
+  color:#FFF; 
+}
+::selection { 
+  background: $red;
+  color:#FFF;
+}
+
 a{
   text-decoration: none;
   color:lighten($gray, 20%);
