@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 33">
     <defs>
-        <style>.cls-1,.cls-2{fill:none;stroke:#ef414d;stroke-miterlimit:10;}.cls-2{stroke-linecap:round; animation: scrollIndicator 2s infinite} @keyframes scrollIndicator { 0% {transform:translateY(-40%)} 50% {transform:translateY(60%)} 100% {transform:translateY(-40%)} } </style>
+        <style>.cls-1,.cls-2{fill:none;stroke:#FFF;stroke-miterlimit:10;}.cls-2{stroke-linecap:round; animation: scrollIndicator 2s infinite} @keyframes scrollIndicator { 0% {transform:translateY(-40%)} 50% {transform:translateY(60%)} 100% {transform:translateY(-40%)} } </style>
     </defs>
     <title>scroll_indicator</title>
     <g id="Calque_2" data-name="Calque 2">
