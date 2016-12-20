@@ -24,16 +24,18 @@
 }
  
 header.main-header {
+
+  background-color: $red;
   &{
     position:relative;
     overflow: hidden;
     width: 100%;
-    padding:10% 0;
+    padding:5% 0 10% 0;
   }
 
   .content-header{
     width:100%;
-    background-color: rgba(255,255,255,255);
+    background-color: $red;
     padding:40px 0; 
   }
 
@@ -72,7 +74,7 @@ header.main-header {
       position: absolute;
       bottom:10px;
       right:50px;
-      color:#fff;
+      color:$white;
     }
 
     span{
@@ -108,29 +110,15 @@ header.main-header {
   h1{
     text-align: left;
     color:#444;
-    color:$red;
+    color:$white;
   }
   
   h3 {
-    color: $brand-gray;
+    color: $white;
+    font-weight: 300;
     margin-bottom: 1.5em;
   }
 
-  button {
-    margin-top: 1.5em;
-    border: 2px solid $brand-gray;
-    background-color: #FFF;
-    padding: 15px 30px;
-    color: $brand-gray;
-    font-weight: 400;
-    transition: all 150ms ease-in-out;
-
-    &:hover {
-      background-color: #000;
-      color: #FFF;
-      border: 2px solid #000;
-    }
-  }
 
 }
 
@@ -153,7 +141,7 @@ header.page-header{
     display:block;
     margin:2% 0;
     padding:2% 0;
-    background-color:rgba(#fff,.5);
+    background-color:rgba($white,.5);
 
   }
   a:hover{
@@ -200,7 +188,7 @@ header.page-header{
   left: 0;
   right: 100%;
   bottom: 0;
-  background: $red;
+  background: $white;
   height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -224,7 +212,7 @@ header.page-header{
 
 .ctaArrow {
   fill:none;
-  stroke:$brand-gray;
+  stroke:$white;
   stroke-miterlimit:10;
   transition: all 150ms ease-in-out;
 }
@@ -233,18 +221,23 @@ header.page-header{
   font-family: $font-family-sans-serif;
   font-weight: 300;
   font-size: 1.2em;
-  color: $brand-gray;
-  padding-bottom: 10px;
+  color: $red;
+  background-color:$white;
+  border-radius:5px;
+  border: 3px slid $white;
+  padding: 0.7em 2em;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(163,33,33,1);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(163,33,33,1);
+  box-shadow: 0px 0px 20px 2px rgba(163,33,33,1);
   transition: all 150ms ease-in-out;
 
   &:hover {
     text-decoration: none;
     color: $red;
-
-    .ctaArrow {
-      stroke: $red;
-      transform: translateX(1em);
-    }
+    margin-top: -4px;
+    -webkit-box-shadow: 0px 10px 65px 2px rgba(163,33,33,1);
+    -moz-box-shadow: 0px 10px 65px 2px rgba(163,33,33,1);
+    box-shadow: 0px 10px 65px 2px rgba(163,33,33,1);
   }
 }
 

@@ -21,17 +21,20 @@
       font-weight: 300;
       width: 70%;
       font-size: 1.2em;
+      color: $brand_gray;
     }
 
     h2 {
       font-size: 2em;
       font-weight: 700;
       width: 100%;
+      color: $red;
       padding-bottom: 0.7em;
-      border-bottom: 2px solid #FFF;
+      border-bottom: 2px solid $red;
     }
 
     h4 {
+      color: $brand_gray;
       margin-top: 1.2em;
       width: 100%;
     }
@@ -62,7 +65,7 @@
 
   .inner-section{
     padding-top: 3em;
-    background: $red;
+    background: $white;
     padding-bottom:4em;
 
     &:before {

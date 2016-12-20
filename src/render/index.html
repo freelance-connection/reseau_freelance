@@ -18,7 +18,7 @@
       <div class="container-text-header">
         <h1 class="steps">{{= ui.header.introHeader }}</h1>
         <h3 class="steps">{{= ui.header.smallIntroHeader }}</h3>
-        <a href="#inscription" class="ctaText hvr-underline-from-left steps" nav-to="#inscription">{{= ui.header.ctaHeader }}<svg class="svgArrow"><path d="M.7 9H36M29 17.8L36 9 29 .6" class="ctaArrow"/></svg></a>
+        <a href="#inscription" class="ctaText hvr-underline-from-left steps" nav-to="#inscription">{{= ui.header.ctaHeader }}</a>
       </div>
       <img class="scrollIndicator" src="{{= ui.icons.scrollIndicator }}" alt="scroll indicator icon svg">
       <img class="sloganHeader steps" src="{{= ui.sloganHeader }}" alt="You + Us = Awesome">
@@ -26,7 +26,7 @@
   </header>
 
   <section id="vision" class="main-content">
-    <article id="vision" class="vision-home invert" ui-scrollpoint>
+    <article id="vision" class="vision-home" ui-scrollpoint>
       <div class="inner-section">
         <div class="container">
            {% include "views/vision.html" %}
