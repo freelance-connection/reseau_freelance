@@ -125,11 +125,16 @@
 
     .container-text{
       width:100%;
+
+      .slogan {
+        width: 70%;
+        margin-bottom:5em;
+      }
     }
 
     p{
       margin-top: 1em;
-      margin-bottom:3em;
+      margin-bottom:2em;
     }
 
     .inscription-equation {
@@ -149,6 +154,14 @@
 @media (max-width: $screen-xs-min) {
   .inscription-home {
     .inscription-section{
+      
+      .container-text {
+        .slogan {
+        width: 100%;
+        margin-bottom:3em;
+       }
+      }
+
       form{
         width: 90%;
       }
