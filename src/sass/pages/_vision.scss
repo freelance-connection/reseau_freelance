@@ -13,7 +13,7 @@
 
   .vision-section {
     width: 100%;
-    padding: 10vh 5vw;
+    padding: 10vh 5vw 5vh 5vw;
 
     p {
       margin-top: 2em;
@@ -46,6 +46,9 @@
 
       li {
         width:30%;
+        padding: 2em;
+        border-radius: 10px;
+        background-color:$white;
         margin-right: 3vw;
 
         &:last-child {
