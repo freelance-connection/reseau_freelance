@@ -2,45 +2,20 @@
     <div class="container-text">
         <h1>{{= inscription.title }}</h1>
         <p class="inscription-content">{{= inscription.intro }}</p>
-        <!--<p class="inscription-equation">{{= inscription.subintro }}</p>-->
         <img class="slogan" src="{{= inscription.slogan }}" alt="You + Us = Awesome">
     </div>
     <div class="container-form">
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        <!--Google Form-->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSexDWfM8KBIS0wN-GcDye_FR5_t8sSp1-el9H5TQ2eFk19Wxw/formResponse" method="post" target="hidden_iframe" ng-init="submitted = true" ng-submit="submitted=false;">
-            <div class="freebirdFormviewerViewFormCard">
-                <div class="freebirdFormviewerViewAccentBanner freebirdAccentBackground"></div>
-                <div class="freebirdFormviewerViewFormContent ">
-                    <div class="freebirdFormviewerViewItemList" role="list">
-                        <div role="listitem" class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem" jsname="ibnC6b" jscontroller="rDGJeb" jsaction="sPvj8e:e4JwSe,vwKRrd;" data-item-id="397540741">
-                            <div class="freebirdFormviewerViewItemsTextItemWrapper">
-                                <div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput" jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jsshadow="" jsname="W85ice">
-                                    <div class="quantumWizTextinputPaperinputMainContent exportContent">
-                                        <div class="quantumWizTextinputPaperinputContentArea">
-                                            <div class="quantumWizTextinputPaperinputInputArea">
-                                                <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Adresse mail " aria-describedby="i.desc.397540741 i.err.397540741" name="entry.1689180257" value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Adresse email" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="freebirdFormviewerViewNavigationNavControls" jscontroller="lSvzH" jsaction="rcuQ6b:npT2md;JIbuQc:V3upec(GeGHKb),HiUbje(M2UYVd),NPBnCf(OCpkoe)" data-shuffle-seed="6856968754485377090">
-                        <div class="freebirdFormviewerViewNavigationButtonsAndProgress">
-                            <div class="freebirdFormviewerViewNavigationButtons">
-                                <div role="button" class="quantumWizButtonPaperbuttonEl quantumWizButtonPaperbuttonFlat quantumWizButtonPaperbuttonDark quantumWizButtonPaperbutton2El2 freebirdFormviewerViewNavigationSubmitButton" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;" jsshadow="" jsname="M2UYVd" aria-disabled="false" tabindex="0">
-                                    <button type="submit" value="Submit" class="submitButton quantumWizButtonPaperbuttonLabel exportLabel" >Envoyer</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <input type="text" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Adresse mail " aria-describedby="i.desc.397540741 i.err.397540741" name="entry.1689180257" value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Adresse email" required>
+                <button type="submit" value="Submit" class="submitButton">Envoyer</button>
             </div>
         </form>
     </div>
     <modal-dialog ng-hide="submitted" ng-click="submitted = true">
         <h2>Inscription validée !</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut sollicitudin libero. Nunc mollis quam a nisl varius congue. Curabitur eget consequat nulla, sed accumsan dolor.</p>
-    </modal-dialog> 
+    </modal-dialog>
 </div>
