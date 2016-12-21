@@ -53,7 +53,7 @@
         form {
             margin: 0 auto;
             margin-top: 2em;
-            width: 60%;
+            width: 75%;
             display: block;
             position: relative;
             ::placeholder {
@@ -64,13 +64,13 @@
         }
         input {
             width: 70%;
-            background-color: $red;
+            background-color: transparent;
             border: none;
             border-bottom: 2px solid $white;
             font: $font-family-sans-serif;
             font-weight: 300;
             font-size: 1.2em;
-            margin-bottom: 2em;
+            margin-right: 2em;
             padding: 1em 0.5em;
         }
         .submitButton {
@@ -123,6 +123,21 @@
     p {
         color: $brand_gray;
         margin-bottom: 1em !important;
+    }
+}
+
+@media (max-width: $screen-md-min) {
+    .inscription-home {
+        .inscription-section {
+            form {
+                width: 80%;
+
+                input {
+                  width: 100%;
+                  margin-bottom: 2em;
+                }
+            }
+        }
     }
 }
 
