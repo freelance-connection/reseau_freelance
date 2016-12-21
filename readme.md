@@ -1,1 +1,1 @@
-# Réseau Freelance / One page
+# Réseau Freelance / One page  [![Build Status](https://travis-ci.org/Seekdesign/reseau_freelance.svg?branch=master)](https://travis-ci.org/Seekdesign/reseau_freelance)
