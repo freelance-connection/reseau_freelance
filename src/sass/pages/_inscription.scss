@@ -46,9 +46,12 @@
           position:absolute;
           top: 1em;
           right: 3em;
+          opacity: 0.5;
         }
         form {
-            width: 50%;
+            margin: 0 auto;
+            margin-top: 2em;
+            width: 60%;
             display: block;
             position: relative;
 
@@ -56,6 +59,7 @@
               color:$white;
               font:$font-family-sans-serif;
               font-weight: 300;
+
             }
         }
         input {
@@ -65,19 +69,36 @@
             border-bottom: 2px solid $white;
             font:$font-family-sans-serif;
             font-weight: 300;
+            font-size:1.2em;
             margin-bottom: 2em;
+            padding: 1em 0.5em;
         }
         content {
             float: right;
-            background-color: $red;
-            border: 2px solid #FFF;
-            padding: 1vh 2vw;
             font-family: $font-family-sans-serif;
             font-weight: 300;
+            font-size: 1.2em;
+            color: $red;
+            background-color: $white;
+            border-radius: 5px;
+            border: 3px solid $white;
+            padding: 0.7em 2em;
+            -webkit-box-shadow: 0px 0px 20px 2px rgba(163, 33, 33, 1);
+            -moz-box-shadow: 0px 0px 20px 2px rgba(163, 33, 33, 1);
+            box-shadow: 0px 0px 20px 2px rgba(163, 33, 33, 1);
             transition: all 150ms ease-in-out;
+
             &:hover {
-                background-color: #FFF;
+              text-decoration: none;
+              color: $red;
+              cursor: pointer;
+              -webkit-box-shadow: 0px 10px 65px 2px rgba(163, 33, 33, 1);
+              -moz-box-shadow: 0px 10px 65px 2px rgba(163, 33, 33, 1);
+              box-shadow: 0px 10px 65px 2px rgba(163, 33, 33, 1);
+            }
+            &:active {
                 color: $red;
+                outline: none;
             }
         }
     }
@@ -91,16 +112,15 @@
             .container-text {
                 width: 100%;
                 .slogan {
-                    width: 70%;
-                    margin-bottom: 5em;
+                    display:none;
                 }
             }
             p {
                 margin-top: 1em;
                 margin-bottom: 2em;
             }
-            .inscription-equation {
-                text-align: center;
+            form {
+                width: 80%;
             }
         }
     }
@@ -109,12 +129,6 @@
 @media (max-width: $screen-xs-min) {
     .inscription-home {
         .inscription-section {
-            .container-text {
-                .slogan {
-                    width: 100%;
-                    margin-bottom: 3em;
-                }
-            }
             form {
                 width: 90%;
             }

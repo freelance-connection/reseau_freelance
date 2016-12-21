@@ -39,8 +39,7 @@ a{
 }
 
 h1{
-  font-size:4em;
-  color:$gray;
+  font-size:3.5em;
   text-align:left;
 }
 
@@ -59,38 +58,3 @@ table{
   
 }
 
-mark {
-  background-color: transparent;
-}
-
-
-ul.logo-list{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  text-align:center;
-  li{
-    display: inline;
-    padding: 0 .5em;
-    a{
-      opacity:.6;
-      transition: all .2s;
-      &:hover{
-        text-decoration: none;
-        opacity:1;
-      }
-    }
-    img{
-      display:inline;
-      max-height:50px;
-      width:auto;
-    }
-  }
-}
-
-
-.page.bis2fly{
-  .main-content{
-    text-align: center;
-  }
-}
