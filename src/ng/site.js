@@ -51,6 +51,26 @@ app.service('smoothNav',['$window',function($window) {
   return this;
 }]);
 
+app.directive('modalDialog', function() {
+  return {
+    restrict: 'E',
+    scope: {
+      show: '=',
+      onClose:'&'
+    },
+    replace: true, 
+    transclude: true, 
+    link: function(scope, element, attrs) {
+      scope.dialogStyle = {};
+      scope.hideModal = function() {
+        scope.show = false;
+        scope.onClose();
+      };
+    },
+    templateUrl: 'src/ng/templates/modal-window.html' 
+  };
+});
+
 
 app.directive('clickTrigger',['$window', function($window){
   return {
