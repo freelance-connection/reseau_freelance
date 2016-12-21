@@ -11,6 +11,8 @@
     .inscription-section {
         width: 100%;
         padding: 8vh 12vw;
+        max-width: 1440px;
+        margin: 0 auto;
         p {
             margin-top: 2em;
             margin-bottom: 5em;
@@ -41,12 +43,12 @@
         .inscription-equation {
             font-size: 2em;
         }
-        .slogan{
-          width: 40%;
-          position:absolute;
-          top: 1em;
-          right: 3em;
-          opacity: 0.5;
+        .slogan {
+            width: 40%;
+            position: absolute;
+            top: 1em;
+            right: 3em;
+            opacity: 0.5;
         }
         form {
             margin: 0 auto;
@@ -54,22 +56,20 @@
             width: 60%;
             display: block;
             position: relative;
-
             ::placeholder {
-              color:$white;
-              font:$font-family-sans-serif;
-              font-weight: 300;
-
+                color: $white;
+                font: $font-family-sans-serif;
+                font-weight: 300;
             }
         }
         input {
-            width: 100%;
+            width: 70%;
             background-color: $red;
             border: none;
             border-bottom: 2px solid $white;
-            font:$font-family-sans-serif;
+            font: $font-family-sans-serif;
             font-weight: 300;
-            font-size:1.2em;
+            font-size: 1.2em;
             margin-bottom: 2em;
             padding: 1em 0.5em;
         }
@@ -87,14 +87,13 @@
             -moz-box-shadow: 0px 0px 20px 2px rgba(163, 33, 33, 1);
             box-shadow: 0px 0px 20px 2px rgba(163, 33, 33, 1);
             transition: all 150ms ease-in-out;
-
             &:hover {
-              text-decoration: none;
-              color: $red;
-              cursor: pointer;
-              -webkit-box-shadow: 0px 10px 65px 2px rgba(163, 33, 33, 1);
-              -moz-box-shadow: 0px 10px 65px 2px rgba(163, 33, 33, 1);
-              box-shadow: 0px 10px 65px 2px rgba(163, 33, 33, 1);
+                text-decoration: none;
+                color: $red;
+                cursor: pointer;
+                -webkit-box-shadow: 0px 10px 65px 2px rgba(163, 33, 33, 1);
+                -moz-box-shadow: 0px 10px 65px 2px rgba(163, 33, 33, 1);
+                box-shadow: 0px 10px 65px 2px rgba(163, 33, 33, 1);
             }
             &:active {
                 color: $red;
@@ -104,7 +103,7 @@
     }
 }
 
-.ng-modal{
+.ng-modal {
     position: absolute;
     background-color: #FFF;
     width: 60%;
@@ -115,49 +114,43 @@
     -webkit-box-shadow: 0px 0px 20px 2px rgba(163, 33, 33, 1);
     -moz-box-shadow: 0px 0px 20px 2px rgba(163, 33, 33, 1);
     box-shadow: 0px 0px 20px 2px rgba(163, 33, 33, 1);
-
     ng-modal-close {
-      background-color: $red;
+        background-color: $red;
     }
-
     h2 {
-      color:$red;
+        color: $red;
     }
-
     p {
-      color:$brand_gray;
-      margin-bottom: 1em !important;
+        color: $brand_gray;
+        margin-bottom: 1em !important;
     }
 }
 
 @media (max-width: $screen-sm-min) {
-.inscription-home {
-    .inscription-section {
-        display: block;
-        padding: 5vh 5vw;
-        .container-text {
-            width: 100%;
-            .slogan {
-                display:none;
+    .inscription-home {
+        .inscription-section {
+            display: block;
+            padding: 5vh 5vw;
+            .container-text {
+                width: 100%;
+                .slogan {
+                    display: none;
+                }
+            }
+            p {
+                margin-top: 1em;
+                margin-bottom: 2em;
+            }
+            form {
+                width: 80%;
             }
         }
-        p {
-            margin-top: 1em;
-            margin-bottom: 2em;
-        }
-        form {
-            width: 80%;
-        }
     }
-  }
-
-  .ng-modal{
-  width: 80%;
-  margin-left: 5%;
-  }  
+    .ng-modal {
+        width: 80%;
+        margin-left: 5%;
+    }
 }
-
-
 
 @media (max-width: $screen-xs-min) {
     .inscription-home {
@@ -165,10 +158,12 @@
             form {
                 width: 90%;
             }
+            input {
+                width: 100%;
+            }
         }
     }
-
     .ng-modal {
-      margin-top: -50%;
+        margin-top: -50%;
     }
 }
