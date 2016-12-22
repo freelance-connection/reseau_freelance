@@ -11,7 +11,7 @@
 .scrollIndicator {
     width: 2%;
     position: absolute;
-    bottom: 2vh;
+    bottom: 5%;
     left: 49%;
 }
 
@@ -184,6 +184,10 @@ header.page-header {
     header.main-header {
         .container-text-header {
             width: 90%;
+        }
+
+        h1 {
+            font-size: 3em;
         }
     }
     

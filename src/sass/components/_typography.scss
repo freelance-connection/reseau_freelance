@@ -14,16 +14,17 @@ h1,h2,h3,h4,h5,h6{
 
 h1{
   font-size:2em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h2{
   font-size:1.7em;
+  font-weight:500;
 }
 
 h3{
   font-size:1.5em;
-  font-weight:700;
+  font-weight:300;
 }
 
 h4{
@@ -36,6 +37,10 @@ h5{
 
 h6{
   font-size:.8em;
+}
+
+p {
+  font-size: 300;
 }
 
 
