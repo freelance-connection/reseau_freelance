@@ -34,7 +34,13 @@ html, body{
   color:#FFF;
 }
 
+a:focus {
+  outline: 0;
+  color: $white;
+}
+
 a{
+  outline: 0;
   text-decoration: none;
   color:lighten($gray, 20%);
 }
