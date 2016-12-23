@@ -10,7 +10,9 @@
   "sloganHeader":"contents/images/slogan_header.svg",
 
   "icons": {
-    "scrollIndicator":"contents/images/scroll_indicator.svg"
+    "scrollIndicator":"contents/images/scroll_indicator.svg",
+    "facebook": "contents/images/facebook-logo.svg",
+    "twitter": "contents/images/twitter-logo.svg"
   },
   
   "header": {
